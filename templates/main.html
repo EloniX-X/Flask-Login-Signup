@@ -1,0 +1,17 @@
+
+{% include "chat.html" %}
+
+
+<html>
+   <h1>hi {{name}}</h1>
+   <body>      
+      <button onclick="location.href='/signup'">signup</button>
+      <button onclick="location.href='/login'">login</button>   
+      
+      {% block content %}
+      <p>meh</p>
+      {% endblock content %}
+   </body>
+
+   
+</html>
